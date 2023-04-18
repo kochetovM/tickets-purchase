@@ -29,11 +29,26 @@ function App() {
   }
 
   const deleteCard = (cardToDelete) => {
+    // try{
+    //   const data = fetch(url)
+    //   console.log(data.json())
+    // } catch (error) {
+    //   console.log(error)
+    // }
     setCards(cards.filter((card) => card !== cardToDelete));
   };
 
   return (
     <div>
+      <form>
+        <label>
+          Name:
+        </label>
+        <input
+          type='submit'
+
+        />
+      </form>
       {!billingInfo.goBilling ? (
         <Tickets onBuyClick={onBuyClick}/>
       ) : (

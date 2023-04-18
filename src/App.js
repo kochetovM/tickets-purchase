@@ -29,7 +29,6 @@ function App() {
   }
 
   const deleteCard = (cardToDelete) => {
-   console.log("check connection")
     setCards(cards.filter((card) => card !== cardToDelete));
   };
 

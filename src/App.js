@@ -29,12 +29,7 @@ function App() {
   }
 
   const deleteCard = (cardToDelete) => {
-    // try{
-    //   const data = fetch(url)
-    //   console.log(data.json())
-    // } catch (error) {
-    //   console.log(error)
-    // }
+   console.log("check connection")
     setCards(cards.filter((card) => card !== cardToDelete));
   };
 
